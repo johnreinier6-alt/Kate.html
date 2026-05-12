@@ -292,6 +292,85 @@ ul{padding-left:18px;margin-top:10px}.list li{margin-bottom:8px;color:rgba(255,2
   <div class="panel"><h3>Free Starter Plan</h3><h2>PHP 0</h2><p class="muted">Basic inventory ledger, limited campaign drafts, and up to 3 connected shops.</p></div>
   <div class="panel hero"><h3>Monthly Plan</h3><h2>PHP 399/mo</h2><p class="muted">Advanced insights, loyalty rewards, seller spotlight, and priority storage.</p></div>
   <div class="panel"><h3>Annual Plan</h3><h2>PHP 3,999/yr</h2><p class="muted">Premium tools, business community, early updates, and multi-platform sync.</p></div>
+  <div      <path class="income-area" d="M15 132 C45 118,58 92,86 98 C116 105,124 67,154 73 C184 79,192 40,220 48 C250 56,260 28,305 22 L305 160 L15 160 Z"/>
+      <path class="income-line" d="M15 132 C45 118,58 92,86 98 C116 105,124 67,154 73 C184 79,192 40,220 48 C250 56,260 28,305 22"/>
+      <circle class="income-dot" cx="15" cy="132" r="5"/><circle class="income-dot" cx="86" cy="98" r="5"/><circle class="income-dot" cx="154" cy="73" r="5"/><circle class="income-dot" cx="220" cy="48" r="5"/><circle class="income-dot featured" cx="305" cy="22" r="6"/>
+      <text class="axis-label" x="10" y="182">Mon</text><text class="axis-label" x="72" y="182">Tue</text><text class="axis-label" x="137" y="182">Wed</text><text class="axis-label" x="204" y="182">Fri</text><text class="axis-label" x="282" y="182">Sun</text>
+    </svg>
+  </div>
+
+  <div class="panel">
+    <h3>Expense Distribution</h3>
+    <div class="donut-wrap">
+      <div class="donut"><div class="donut-center"><div><strong>21.8K</strong><span>EXPENSES</span></div></div></div>
+      <div class="legend">
+        <div class="legend-item"><span class="legend-name"><span class="dot" style="background:#ff4fb8"></span>Ads</span><span class="legend-value">38%</span></div>
+        <div class="legend-item"><span class="legend-name"><span class="dot" style="background:#836dff"></span>Shipping</span><span class="legend-value">26%</span></div>
+        <div class="legend-item"><span class="legend-name"><span class="dot" style="background:#52d7ff"></span>Packaging</span><span class="legend-value">20%</span></div>
+        <div class="legend-item"><span class="legend-name"><span class="dot" style="background:#ffbe55"></span>Fees</span><span class="legend-value">16%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="screen" id="inventoryScreen">
+  <div class="top"><div><h2>Inventory</h2><p class="muted">Product list, best sellers, and dusty stock alerts.</p></div></div>
+  <div class="panel"><h3>Best Sellers</h3><div class="bars">
+    <div class="bar-row"><span>Earbuds</span><div class="track"><div class="fill" style="width:92%"></div></div><strong>92%</strong></div>
+    <div class="bar-row"><span>Blender</span><div class="track"><div class="fill" style="width:78%"></div></div><strong>78%</strong></div>
+    <div class="bar-row"><span>Tripod</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div>
+  </div></div>
+  <div class="panel"><h3>Product List</h3>
+    <div class="row"><div><div class="row-title">Wireless Earbuds</div><p class="muted">18 units left</p></div><span class="bad">Low</span></div>
+    <div class="row"><div><div class="row-title">Portable Blender</div><p class="muted">88 units left</p></div><span class="pill">Good</span></div>
+    <div class="row"><div><div class="row-title">Mini Tripod</div><p class="muted">11 units left</p></div><span class="warn">Restock</span></div>
+  </div>
+  <div class="panel"><h3>Dusty Stock Alerts</h3>
+    <div class="row"><div><div class="row-title">Phone Ring Light</div><p class="muted">No sale in 31 days</p></div><span class="warn">Promo</span></div>
+    <div class="row"><div><div class="row-title">Desk Organizer</div><p class="muted">No sale in 26 days</p></div><span class="warn">Bundle</span></div>
+  </div>
+</section>
+
+<section class="screen" id="customersScreen">
+  <div class="top"><div><h2>Customer Insights</h2><p class="muted">Customer categories, purchase history, and recommended targets.</p></div></div>
+  <div class="grid">
+    <div class="panel feature"><span>A</span><h3>VIP Buyers</h3><p class="muted">426 customers</p></div>
+    <div class="panel feature"><span>B</span><h3>Repeat Buyers</h3><p class="muted">1,204 customers</p></div>
+    <div class="panel feature"><span>C</span><h3>At Risk</h3><p class="muted">188 customers</p></div>
+    <div class="panel feature"><span>D</span><h3>New Leads</h3><p class="muted">792 customers</p></div>
+  </div>
+  <div class="panel"><h3>Purchase History</h3>
+    <div class="row"><div><div class="row-title">Maria L.</div><p class="muted">5 purchases, PHP 8.2K total</p></div><span class="pill">VIP</span></div>
+    <div class="row"><div><div class="row-title">Andre P.</div><p class="muted">2 purchases, last order 42 days ago</p></div><span class="warn">Win Back</span></div>
+  </div>
+  <div class="panel hero"><h3>Recommended Marketing Targets</h3><p class="muted">Send a bundle offer to repeat buyers who bought earbuds but have not bought accessories.</p><button class="btn" onclick="showScreen('campaignScreen')">Create Campaign</button></div>
+</section>
+
+<section class="screen" id="campaignScreen">
+  <div class="top"><div><h2>Campaign Generator</h2><p class="muted">Promotion suggestions, discount calculator, and automated message draft.</p></div></div>
+  <div class="panel hero"><h3>Promotion Suggestion</h3><p class="muted">Suggested promo: 12% discount keeps projected margin at 31% after platform fees.</p></div>
+  <div class="panel"><h3>Discount Calculator</h3><input type="number" value="899"><input type="number" value="12"><button class="btn" onclick="calculateMargin()">Calculate Margin</button><p class="muted" id="marginResult">Estimated profit after discount: PHP 214 per unit.</p></div>
+  <div class="panel"><h3>Automated Message Draft</h3><textarea>Hi [Name], your favorite seller has a limited bundle deal for you. Get 12% off today and enjoy priority shipping on your next order.</textarea><button class="ghost">Regenerate Draft</button></div>
+</section>
+
+<section class="screen" id="profileScreen">
+  <div class="top"><div><h2>Profile</h2><p class="muted">Account information, settings, and subscription access.</p></div></div>
+  <div class="panel hero"><h3>Jennie Santos</h3><p class="muted">Owner, Jennie's Online Shop</p><p class="muted">Premium Monthly Plan</p></div>
+  <div class="panel"><h3>Account Info</h3>
+    <div class="row"><div><div class="row-title">Email</div><p class="muted">jennie@seller.com</p></div><span class="pill">Verified</span></div>
+    <div class="row"><div><div class="row-title">Business Type</div><p class="muted">Online retail seller</p></div><span class="pill">Active</span></div>
+  </div>
+  <div class="panel"><h3>Settings</h3><button class="ghost">Edit Profile</button><button class="ghost">Notification Settings</button><button class="btn" onclick="showScreen('subscriptionScreen')">Subscription</button><button class="ghost" onclick="showScreen('loginScreen')">Log Out</button></div>
+</section>
+
+<section class="screen" id="subscriptionScreen">
+  <div class="top">
+    <button class="back" onclick="showScreen('profileScreen')">Back</button>
+  </div>
+  <div class="panel hero"><h2>Subscription</h2><p class="muted">Plans, premium features, and membership perks.</p></div>
+  <div class="panel"><h3>Free Starter Plan</h3><h2>PHP 0</h2><p class="muted">Basic inventory ledger, limited campaign drafts, and up to 3 connected shops.</p></div>
+  <div class="panel hero"><h3>Monthly Plan</h3><h2>PHP 399/mo</h2><p class="muted">Advanced insights, loyalty rewards, seller spotlight, and priority storage.</p></div>
+  <div class="panel"><h3>Annual Plan</h3><h2>PHP 3,999/yr</h2><p class="muted">Premium tools, business community, early updates, and multi-platform sync.</p></div>
    <div class="panel"><h3>Premium Features</h3>
     <ul class="list">
       <li>Tiered Loyalty Rewards</li>
